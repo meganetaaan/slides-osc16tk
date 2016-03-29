@@ -13,3 +13,14 @@ Reveal.initialize({
 		{ src: 'js/vendor/notes/notes.js', async: true }
 	]
 });
+
+Reveal.addEventListener('slidechanged', function(event) {               
+    console.log(event);
+     if(event.currentSlide.getAttribute('data-background-iframe')) {
+          document.querySelector('.reveal>.backgrounds').style.zIndex = 1;
+          document.querySelector('.reveal>.backgrounds>.slide-background.present').style.zIndex = 1;
+     } else {
+          document.querySelector('.reveal>.backgrounds').style.zIndex = 0;
+          document.querySelector('.reveal>.backgrounds>.slide-background.present').style.zIndex = 0;
+     }                  
+});
