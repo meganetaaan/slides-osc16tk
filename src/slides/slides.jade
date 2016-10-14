@@ -1,6 +1,86 @@
 //section(data-background-iframe="http://www.htmlhifive.com/")
 
 section
+  p JavaScript勉強会
+
+section
+  h1 概要
+
+section
+  h2 目標
+  p JavaScriptの言語仕様について理解する。
+  p 特に下記のトピックは重点的に学習し、#[br]用語を正しく使って簡単に説明できるようになる。
+  ul
+    li 関数とクロージャ
+    li DOM
+    li イベント
+  p クライアントサイドのJavaScriptについて理解する
+
+section
+  h2 参加者の想定レベル
+  ul
+    li PSCheck（Java）を実施
+    li EclipseでJSをちょっと書いたことがある
+    li hifiveのチュートリアルを実施済み
+    li （一部参加者は）TodoMVC作成済み
+
+section
+  h2 教材
+  a(href='https://www.amazon.co.jp/%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88JavaScript-PERFECT-4-%E4%BA%95%E4%B8%8A-%E8%AA%A0%E4%B8%80%E9%83%8E/dp/477414813X') パーフェクトJavaScript
+  p 前半部分（言語仕様、クライアントサイドJavaScript）を抜粋。
+ 
+section
+  h2 スケジュール
+
+section(data-background-iframe="http://nscom.ns-sol.co.jp/co4/app/main/select?pageId=124486")
+
+section
+  h1 進め方
+
+section
+  h2 講義
+  ul
+    li （前回の質問の解説）
+    li 書籍の新しい章を(抜粋して)読み進める
+    li 質疑応答
+    li #[strong 予習不要]
+
+section
+  h2 宿題、自習
+  ul
+    li 講義で取り上げなかった部分を含めて書籍を通読する
+    li 質疑応答 in Feather Messengerの勉強会ルーム#[br]
+      strong 参加者毎に自習用スレッドを立てて、学習中のつぶやきや疑問は必ずそこに書く。
+
+section
+  h2 大課題
+  p 勉強会後半でプログラミング課題に取り組む。#[br]テーマは検討中
+  ul
+    li Prototypeを使ってオブジェクト指向プログラミングをする
+    li 簡易なEventDispatcherを実装する
+    li jQueryが内部でやっていることを確認する
+    li #[a(href="https://q-az.net/javascript-mouse-stalker/") マウスストーカー] を作る
+
+section
+  h3
+    a(href="http://itpro.nikkeibp.co.jp/atcl/column/14/090100053/091500086") 開発環境を整える
+  ul
+    li ブラウザ: Chrome, IE11を推奨
+    li エディタ: 自由(Eclipse以外でも可。むしろ推奨) #[br] #[a(href="https://code.visualstudio.com/") VisualStudio Code]
+    li HTTPサーバ: Node.js + #[a(href="https://github.com/meganetaaan/js-study.git") JS勉強会用雛形]
+  pre
+    code
+      |git clone https://github.com/meganetaaan/js-study.git
+      |cd js-study
+      |npm install
+      |npm start
+
+section
+  h1 JavaScriptの概要
+
+section(data-background-iframe="http://qiita.com/Wreulicke/items/a98c9334ac32d07895b4")
+
+section
   h1 散布図
   div.d3-scatter
 
@@ -8,11 +88,12 @@ section
   h1 棒グラフ
   div.d3
 
-section#fuga
-  h1 リンク先
-
-section
-  h1 リンクのテスト
-    p
-      a(href='#fuga') このリンク
-      | はfugaスライドに飛びます。
+//section#fuga
+  //h1 リンク先
+//
+//section
+  //h1 リンクのテスト
+    //p
+      //a(href='#fuga') このリンク
+      //| はfugaスライドに飛びます。
+//
