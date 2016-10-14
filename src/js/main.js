@@ -3,6 +3,8 @@ Reveal.initialize({
 	progress: true,
 	history: true,
 	center: true,
+	mouseWheel: true,
+	keyboard: true,
 
 	transition: 'fade', // none/fade/slide/convex/concave/zoom
 
