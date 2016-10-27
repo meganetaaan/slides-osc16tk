@@ -5,6 +5,7 @@ Reveal.initialize({
 	center: true,
 	mouseWheel: true,
 	keyboard: true,
+	center: false,
 
 	transition: 'fade', // none/fade/slide/convex/concave/zoom
 
@@ -12,7 +13,10 @@ Reveal.initialize({
 	dependencies: [
 		{ src: '/js/vendor/classList.js', condition: function() { return !document.body.classList; } },
 		{ src: 'js/vendor/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-		{ src: 'js/vendor/notes/notes.js', async: true }
+		{ src: 'js/vendor/notes/notes.js', async: true },
+		        // Interpret Markdown in <section> elements
+	    { src: 'js/vendor/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'js/vendor/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	]
 });
 

@@ -1,3 +1,16 @@
+[オープンソースカンファレンス東京](http://www.ospn.jp/osc2016-fall/)での発表で使うスライドです。
+
+下記を使っています。
+
+* reveal.js
+* jade
+* stylus
+* gulp
+
+--
+
+（以下、クローン元のBoilerplateのREADME.md）
+
 # Reveal.js Boilerplate
 
 This is a boilerplate to use [Reveal.JS](http://lab.hakim.se/reveal-js/) easily with [Gulp](http://gulpjs.com/), [Jade](http://jade-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).

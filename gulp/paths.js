@@ -5,8 +5,9 @@ module.exports = {
     source: {
         templates: 'src/templates/**/*.jade',
         slides: 'src/slides/*.jade',
+        md: 'src/slides/*.md',
         js: 'src/js/**/*.js',
-        styl: 'src/styl/**/*.styl',
+        styl: ['src/styl/**/*.styl', 'src/styl/**/*.css'],
         img: 'src/img/**/*',
         files: {
           jade: 'src/templates/index.jade',
@@ -18,6 +19,7 @@ module.exports = {
 
     browserSync: {
       html: 'build/**/*.html',
+      md: 'build/**/*.md',
       js: 'build/js/**/*.js',
       css: 'build/css/**/*.css',
       img: 'build/img/**/*'
@@ -25,6 +27,7 @@ module.exports = {
 
     build: {
       html: './build/',
+      md: 'build/',
       js: 'build/js',
       css: 'build/css',
       img: 'build/img',

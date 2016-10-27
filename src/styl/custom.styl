@@ -1,0 +1,167 @@
+text-color = #444
+text-color-acc = #9d3232
+text-color-dim = #888
+
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: normal;
+  src: local("YuGothic-Medium"),
+       local("Yu Gothic Medium"),
+       local("YuGothic-Regular");
+}
+
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: bold;
+  src: local("YuGothic-Bold"),
+       local("Yu Gothic");
+}
+
+.book {
+    border-top: 1px solid #444;
+    border-right: 5px solid #888;
+    border-bottom: 5px solid #888;
+    border-left: 1px solid #444;
+    transform: rotate(6deg);
+    box-shadow: 5px 5px 3px #666;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    &.chapter {
+       margin-top: 20%; 
+    }
+}
+.slide-background {
+    &:before {
+        content: url(../img/banner_back.png);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    &:after {
+        content: url(../img/banner.png);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+.reveal .slides {
+    section {
+    p,li,div {
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Hiragino Kaku Gothic ProN",
+            MyYuGothicM,
+            Meiryo,
+            sans-serif;
+        color: text-color;
+        font-weight: normal;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        text-transform: none;
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Hiragino Kaku Gothic ProN",
+            MyYuGothicM,
+            Meiryo,
+            sans-serif;
+        color: text-color;
+        font-weight: bold;
+    }
+    img {
+        border: 0px;
+        box-shadow: none;
+    }
+    .accent {
+        color: text-color-acc;
+    }
+    li {
+        line-height: 1.25em;
+    }
+    }
+}
+
+.footer {
+    position: absolute;
+    opacity: .5;
+    bottom: 1em;
+    left: 1.3em;
+    font-size: 1.5em;
+    &:before {
+        content: "";
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 1.2em;
+        height: 3em;
+        opacity: 1;
+        background-color: rgb(76,188,215);
+    }
+}
+
+div.example{
+    margin-left: -50px;
+    margin-right: 25px;
+    float: left;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border: 15px solid #444;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #4444;
+    .example-content {
+        width: 960px;
+        height: 640px;
+        overflow: hidden;
+
+        iframe {
+            transform:scale(0.65);
+            transform-origin: 0 0;
+        }
+    }
+    &.small {
+    .example-content {
+        width: 1600px;
+        height: 1200px;
+        overflow: hidden;
+
+        iframe {
+            transform:scale(0.5);
+            transform-origin: 0 0;
+        }
+    }
+    }
+}
+
+.top-row {
+    height: 60%;
+}
+
+.bottom-row {
+    height: 35%;
+}
+
+.left-col {
+    font-size: 0.7em;
+    h1,h2,h3,h4,h5,h6 {
+        text-align: left;
+    }
+    width: 35%;
+    float: left;
+    .dim {
+        color: text-color;
+    }
+}
+
+.highlight {
+    color: text-color-acc!important;
+}
+
+.right-col {
+    margin-top: 15px;
+    width: 60%;
+    float: right;
+}

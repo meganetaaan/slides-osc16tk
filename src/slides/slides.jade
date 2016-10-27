@@ -1,99 +1,426 @@
 //section(data-background-iframe="http://www.htmlhifive.com/")
 
-section
-  p JavaScript勉強会
+section.center
+  h2 本気で考える<br>「HTML5」×「業務システム」 
+  div(style="font-size: 0.6em; text-align: right")
+    新日鉄住金ソリューションズ株式会社<br>
+    システム研究開発センター<br>
+    石川真也<br>
+    img(src="../img/hifive_logo_clear.png" width="200px" alt="hifiveロゴ")
 
 section
-  h1 概要
+  h2 自己紹介
+  iframe(style="width: 800px; height: 500px; border: none" src="http://meganetaaan.github.io/aboutme/")
 
 section
-  h2 目標
-  p JavaScriptの言語仕様について理解する。
-  p 特に下記のトピックは重点的に学習し、#[br]用語を正しく使って簡単に説明できるようになる。
+  h2 書籍が出版されました！
+  img.book(width="300px" src="../img/itpro_book.jpg")
+  p #htmlhifive #osc16tkを付けて呟いた方にプレゼント！
+
+section(data-markdown data-separator="^---\n" data-separator-notes="^Notes:\n").
+  ## こんな人向け
+  * ユーザ企業の情報システム部門の方
+  * システム内製化を検討中の方
+  * SIer、ソフトハウス等の技術リーダー
+  * HTML5を使った開発に興味がある方
+
+  Notes:
+  想定するシステム
+  * 企業が業務遂行のために使うWebシステム
+  * 向上や店舗の現場で従業員が使うWebシステム
+  * ECサイトやサポートサイトなどのWebサイト
+  想定しないシステム
+  * 広告
+  * ゲーム
+  * 静的サイト
+
+section.center
+  h1 tl;dr
+  h3 今こそHTML5の表現力を<br>業務システムに活用しよう
+  p Webならではの難しさを解消しつつ「大規模開発」する土壌が整いつつある。
+  aside.notes.
+    これからは業務システムも積極的にHTML5を使って開発すべきである、と私達は考えます。
+    * 見栄えや操作感の改良
+    * マルチデバイス対応
+    * アプリ配布コスト抑制
+    * ベンダーロックインの回避
+    業務要件にありがちな
+    * 大量データの可視化
+    * リアルタイム通信
+    さらに
+    * 3D
+    * メディアの利用
+    もできる
+
+section
+  h2 HTML5とは
   ul
-    li 関数とクロージャ
-    li DOM
-    li イベント
-  p クライアントサイドのJavaScriptについて理解する
+    li W3Cが勧告した次世代Web標準
+    li タグの整理
+    li 機能追加
+  aside.notes
+    p 業務システムに適用する企業も現れている
+    | 例：
+    | 例１
+    | 例２ （B2Cでもよいので）派手目の事例
+
+section.center
+  h1 HTML5適用の利点
 
 section
-  h2 参加者の想定レベル
+  h2 フォーム入力
+
+section
+  h2 ショートカットキー
+
+section
+  h2 レスポンシブWebデザイン
+
+section
+  h2 オフライン機能
+
+section
+  h2 Ajax + History API
+
+section
+  h2 CSSアニメーション
+
+section
+  h2 データ可視化三種の神器<!-- チャート -->
+  h3 <span class="highlight">チャート</span>
+  h3 グリッド
+  h3 図形（グラフ）
+
+section
+  h2 データ可視化三種の神器<!-- グリッド -->
+  h3 チャート
+  h3 <span class="highlight">グリッド</span>
+  h3 図形（グラフ）
+
+section
+  h2 データ可視化三種の神器<!-- 図形（グラフ） -->
+  h3 チャート
+  h3 グリッド
+  h3 <span class="highlight">図形（グラフ）</span>
+
+section
+  h2 HTML5適用の利点
+    h4 Webアプリが元々持つメリット<br> ×<br> ネイティブアプリ的な<br> 表現,機能,操作性,パフォーマンス<br> 開発技術基盤の統一
+
+section.center
+  h3 HTML5は、業務システムに<br>どんな貢献ができるだろう？
+
+section
+  h2 棚割り
+  .left-col
+    h3 要件
+    ul
+      li タブレット、<br>タッチ操作
+    hr
+    h3 テクノロジ
+    ul
+      li タッチイベント
+      li canvas, SVG
+  .right-col
+      .example: .example-content
+        iframe(width="1200px" height="800px" src="https://www.htmlhifive.com/ja/gallery/planogram/")
+
+section
+  h2 日報（フォーム）
+  .left-col
+    h3 要件
+    ul
+      li タブレット、<br>タッチ操作への対応
+    h3 テクノロジ
+    hr
+    ul
+      li タッチイベント
+      li canvas, SVG
+  .right-col
+    .example: .example-content
+      iframe(style="margin-left:-60px;" width="900px" height="600px" src="https://hifivemania.github.io/hifive-handson/8/")
+
+section
+  h2 データグリッド
+  .right-col
+    .example: .example-content
+      iframe(width="900px" height="600px" src="https://www.htmlhifive.com/ja/recipe/workflow/complete/")
+  .left-col
+    h3 要件
+    ul
+      li 高パフォーマンス<br>
+      li 数百数万行の<br>データ表示
+      li 高機能 行/列固定
+      li セル結合
+      li コピーペースト
+    hr
+    h3 テクノロジ
+    ul
+      li 可視範囲のみ描画
+      li 非同期処理
+
+section
+  h2 データ視覚化（チャート）
+  .left-col
+    h3 要件
+    ul
+      li リアルタイム描画
+      li Internet Explorer8で<br>軽快に動作
+    hr
+    h3 テクノロジ
+    ul
+      li SVG
+      li VML
+  .fight-col
+    .example: .example-content
+      iframe(width="1200px" height="800px" src="https://www.htmlhifive.com/ja/gallery/foreign-exchange/")
+
+section
+  h2 データ視覚化（グラフ表現）
+  .left-col
+    h3 要件
+    ul
+      li 数千以上のノード/エッジ描画
+      li インタラクティブ性
+      li ノード移動,編集など
+    hr  
+    h3 テクノロジ
+    ul
+      li SVG
+      li 可視範囲のみ描画
+  .right-col
+    .example
+      video(width="590px" height="400px" src="../mov/h5graph.mp4")
+
+section
+  h2 データ視覚化（3D表現）
+  .left-col
+    h3 要件
+    ul
+      li 3D表現
+      li インタラクティブ性
+      li 視点変更,クリック
+    hr
+    h3 テクノロジ
+    ul
+      li WebGL
+      li three.js
+  .right-col
+    .example.small.right-col: .example-content
+      iframe(class="small" width="1200px" height="800px" src="http://hifive.github.io/hifive-samples/gallery/rain-map/WebContent/index.html")
+
+section.center
+  h1 HTML5を使った<br> 開発の進め方
+  aside.notes.
+    HTML5で実現可能な表現、機能について、
+    HTML5がもたらすメリットについて解説しました。
+    リッチなUIを持つシステムの開発は
+    予定通り開発を進めることが難しくなりがち。
+    li HTML5開発ならではの考慮点
+    li 開発の進め方
+    li 役に立つツール,ライブラリ
+    1. 要件定義
+    2. 設計
+    3. 実装
+    4. テスト
+    5. 運用,保守
+
+section
+  h2 業務システムの特長
+  .left-col
+    h3 <span class="highlight">IT戦略と課題</span>
+    h3 開発
+    h3 運用・保守
+
+  .right-col
+    li IT投資における「維持費用」の抑制<br>→攻めの投資への転換
+    li "SMAC"や"IoT"など振興発展技術軍への対応
+    li 多数のシステムに対する開発～運用全般に渡る統制
+    | 情報漏えいなどセキュリティリスクへの対応も
+
+section
+  h2 業務システムの特長
+  .left-col
+    h3 IT戦略と課題
+    h3 <span class="highlight">開発</span>
+    h3 運用・保守
+  .right-col
+    ul
+      li 多人数での役割分担（PM, SE, デザイナ）
+      li 分散チーム開発
+      li 外部システムとの接続
+      li スモールスタート、スパイラル、アジャイル的<br>開発スタイルの登場
+
+section
+  h2 業務システムの特長
+  .left-col
+    h3 IT戦略と課題
+    h3 開発
+    h3 <span class="highlight">運用・保守</span>
+  .right-col
+    ul
+      li 業務の変更に伴って改造されてゆく
+      li 数年～１０年以上使われる
+      li 開発（保守）に携わるメンバーが途中で変わることも多い
+
+section
+  h2 HTML5採用のための考慮事項
+    1. 対象ブラウザ
+    2. パフォーマンス要求
+    aside.notes
+      h3 適する
+      h3 適さない
+
+section
+  h1 Web特有の困難
   ul
-    li PSCheck（Java）を実施
-    li EclipseでJSをちょっと書いたことがある
-    li hifiveのチュートリアルを実施済み
-    li （一部参加者は）TodoMVC作成済み
+    li ブラウザの実装による差異
+    li ブラウザの更新頻度
 
 section
-  h2 教材
-  a(href='https://www.amazon.co.jp/%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88JavaScript-PERFECT-4-%E4%BA%95%E4%B8%8A-%E8%AA%A0%E4%B8%80%E9%83%8E/dp/477414813X') パーフェクトJavaScript
-  p 前半部分（言語仕様、クライアントサイドJavaScript）を抜粋。
- 
-section
-  h2 スケジュール
-
-section(data-background-iframe="http://nscom.ns-sol.co.jp/co4/app/main/select?pageId=124486")
-
-section
-  h1 進め方
-
-section
-  h2 講義
+  h3 ブラウザの実装による差異
   ul
-    li （前回の質問の解説）
-    li 書籍の新しい章を(抜粋して)読み進める
-    li 質疑応答
-    li #[strong 予習不要]
+    li IEだけ…
+    ul
+      li 遅い
+      li 拡大率を変えると挙動がおかしい
+      li 印刷レイアウトが崩れる
+  aside.notes.
+    そもそも「ページ」または「フレーム」が最小単位だった昔と比べて
+    複雑、大規模、コンポーネント化されてきている。
+    直近5年間の社内チャットのログで
+    「再現 しない」の検索結果39件
 
 section
-  h2 宿題、自習
+  h3 ブラウザの更新頻度
+
+section
+  h1 準備を整える
+
+section
+  h3 ツールを活用する
+
+section
+  h2 FW選定のための考慮事項
+    ul
+      li オープンな仕様であるか？
+      li 何を解決しようとしているか？
+      li 使いこなせそうか？
+      li 開発要因は確保できるか？
+      li プロダクトとしての継続性があるか？
+    aside.notes
+
+section
+  h2 Watch us!
+    ul
+      li [facebook](http://www.facebook.com/htmlhifive)
+      li [Twitter](https://twitter.com/htmlhifive)
+      li [Website](http://www.htmlhifive.com)
+
+section
+  h2 Canvas SVG CSS3 File API IndexedDB  WebSQLDB XHR2  WebSocket  CSS Media Queries デバイス連携 AppCache Web Components  WebRTC  WebWorker etc.etc.
+  h2 要素技術が揃いつつある
+
+section
+  h1 hifive
+
+section
+  h2 What’s hifive
+    ul
+      li アジャイル,高速プロトタイピング 
+      li 分散/分担開発の枠組み ユーザー 開発者 
+      li フレームワーク 
+      li 高速,高機能部品 
+      li 開発ガイド 
+      li 支援ツール 
+      li 開発者教育 
+      li サンプルアプリ 
+      li すぐに使える クラウドサービス 
+      li HTML5技術の啓 蒙 協働
+
+section
+  h2 コンセプト 
+  h3 使い始めるための敷居を低く 
+  h3 Webの標準的な仕組みから逸脱しない 
+  h3 開発のサイクルをトータルにサポート 
+  | ランタイムだけでなく、 ライブラリ、ツール、ドキュメント、教育 
+
+section
+  h2 コアフレームワーク
+  h3 ツール
+  h3 ライブラリ
+  h3 ガイド/ドキュメント 
+
+section
+  h2 コアフレームワーク 
   ul
-    li 講義で取り上げなかった部分を含めて書籍を通読する
-    li 質疑応答 in Feather Messengerの勉強会ルーム#[br]
-      strong 参加者毎に自習用スレッドを立てて、学習中のつぶやきや疑問は必ずそこに書く。
+    li Controller層 
+    ul
+      li イベントハンドリング 
+      li メモリリークが起こりにくい ようにクリーンアップ（参照の自動null化） 
+    li View層 
+    ul
+      li テンプレート 
+      li データバインド 
+      li （「ボタン」などの 基本UI部品は他のライブラリに）
+    li Model/Logic層 階層化MVC (PACパターン)
+    ul
+      li データオブジェクトの変更管理
+      li その他
+      li アスペクトによる横断的ログ取得
+      li 型を保持できる オブジェクトシリアライザ等のUtil 
+
+section: :markdown
+  ## Hello World 
+
+  ```javascript
+  (function(){
+    var controller = {
+      __name: 'myapp.PageController',
+      '.button click': function(){
+        alert(‘hello world!’);
+      }
+    };
+    h5.core.controller('body', controller);
+  })();
+  ```
+
+  ⇒詳細は www.htmlhifive.com 
+
+section.center
+  h2 ツール 
 
 section
-  h2 大課題
-  p 勉強会後半でプログラミング課題に取り組む。#[br]テーマは検討中
+  h2 テンプレートエディタ
   ul
-    li Prototypeを使ってオブジェクト指向プログラミングをする
-    li 簡易なEventDispatcherを実装する
-    li jQueryが内部でやっていることを確認する
-    li #[a(href="https://q-az.net/javascript-mouse-stalker/") マウスストーカー] を作る
+    li 任意のJSONデータに基づいて テンプレートの出力結果をリアルタイムに表示 実装の効率化 
 
 section
-  h3
-    a(href="http://itpro.nikkeibp.co.jp/atcl/column/14/090100053/091500086") 開発環境を整える
+  h2 開発者ツール
   ul
-    li ブラウザ: Chrome, IE11を推奨
-    li エディタ: 自由(Eclipse以外でも可。むしろ推奨) #[br] #[a(href="https://code.visualstudio.com/") VisualStudio Code]
-    li HTTPサーバ: Node.js + #[a(href="https://github.com/meganetaaan/js-study.git") JS勉強会用雛形]
-  pre
-    code
-      |git clone https://github.com/meganetaaan/js-study.git
-      |cd js-study
-      |npm install
-      |npm start
+    li マウスオーバーしたイベントハンドラの ターゲット要素がハイライト表示される
+    li アプリの構造をランタイムに可視化 
+    li 動作中のコントローラの一覧等を表示
+    li イベントハンドラの表示
+    li メソッドの呼び出しトレース
+    li hifive本体の後にJSを追加で1つ読み込むだけ 保守,引継の効率化 
 
 section
-  h1 JavaScriptの概要
-
-section(data-background-iframe="http://qiita.com/Wreulicke/items/a98c9334ac32d07895b4")
+  h4 hifiveはHTML5企業システム開発をサポートします 
+  h4 OSS開発サイト 
+  ul
+    li GitHub github.com/hifive/hifivemain 
+  h4 開発者サイト 
+  ul
+    li チュートリアルやリファレンスの公開 
+    li サンプルの公開 
+    li 開発,評価用のコードホスティング
 
 section
-  h1 散布図
-  div.d3-scatter
-
-section
-  h1 棒グラフ
-  div.d3
-
-//section#fuga
-  //h1 リンク先
-//
-//section
-  //h1 リンクのテスト
-    //p
-      //a(href='#fuga') このリンク
-      //| はfugaスライドに飛びます。
-//
+  h2 商標について 
+  ul
+    li NS Solutions、NS（ロゴ）、NSSOLは、新日鉄住金ソリューションズ株式会 社の登録商標です。 
+    li hifive、hifive(ロゴ)は、新日鉄住金ソリューションズ株式会社の登録商 標です。 
+    li JAVAは､米国ORACLE Corp.の登録商標です｡ 
+    li HTML5 Logo by W3C. 
+    li その他本文記載の会社名及び製品名は、それぞれ各社の商標又は登録商標 です。 
