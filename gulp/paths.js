@@ -7,11 +7,13 @@ module.exports = {
         slides: 'src/slides/*.jade',
         md: 'src/slides/*.md',
         js: 'src/js/**/*.js',
+        css: 'src/css/**/*.css',
         styl: ['src/styl/**/*.styl', 'src/styl/**/*.css'],
         img: 'src/img/**/*',
         files: {
           jade: 'src/templates/index.jade',
           styl: 'src/styl/main.styl',
+          css: 'src/css/**/*.css',
           notes: 'src/js/vendor/notes/notes.html'
         }
 

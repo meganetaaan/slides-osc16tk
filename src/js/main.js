@@ -6,8 +6,9 @@ Reveal.initialize({
 	mouseWheel: true,
 	keyboard: true,
 	center: false,
-
-	transition: 'fade', // none/fade/slide/convex/concave/zoom
+	slideNumber: true,
+	
+	transition: 'none', // none/fade/slide/convex/concave/zoom
 
 	// Optional reveal.js plugins
 	dependencies: [

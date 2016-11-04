@@ -2,6 +2,52 @@ text-color = #444
 text-color-acc = #9d3232
 text-color-dim = #888
 
+color-accent = #9d3232
+
+.row
+  display -webkit-box
+  display -webkit-flex
+  display flex
+  -webkit-flex-direction row
+  flex-direction row
+  
+  .col-1
+    -webkit-flex-grow 1
+    flex-grow 1
+  .col-2
+    -webkit-flex-grow 2
+    flex-grow 2
+  .col-3 
+    -webkit-flex-grow 3
+    flex-grow 3
+  .col-4
+    -webkit-flex-grow 4
+    flex-grow 4
+  .col-5
+    -webkit-flex-grow 5
+    flex-grow 5
+  .col-6
+    -webkit-flex-grow 6
+    flex-grow 6
+  .col-7
+    -webkit-flex-grow 7
+    flex-grow 7
+  .col-8
+    -webkit-flex-grow 8
+    flex-grow 8
+
+div.col-3
+  font-size: 0.8em;
+  float left
+  width 30%
+div.col-7
+  float right
+  width 60%
+
+h1,h2,h3,h4,h5,h6
+  &.highlight
+    color color-accent
+
 @font-face {
   font-family: "MyYuGothicM";
   font-weight: normal;
@@ -17,20 +63,12 @@ text-color-dim = #888
        local("Yu Gothic");
 }
 
-.book {
-    border-top: 1px solid #444;
-    border-right: 5px solid #888;
-    border-bottom: 5px solid #888;
-    border-left: 1px solid #444;
-    transform: rotate(6deg);
-    box-shadow: 5px 5px 3px #666;
-}
-
 h1,h2,h3,h4,h5,h6 {
     &.chapter {
        margin-top: 20%; 
     }
 }
+
 .slide-background {
     &:before {
         content: url(../img/banner_back.png);
@@ -74,12 +112,22 @@ h1,h2,h3,h4,h5,h6 {
     img {
         border: 0px;
         box-shadow: none;
-    }
-    .accent {
-        color: text-color-acc;
+        &.book {
+            border-top: 2px solid #666;
+            border-right: 5px solid #888;
+            border-bottom: 5px solid #888;
+            border-left: 2px solid #666;
+            transform: rotate(6deg);
+            box-shadow: 5px 5px 3px #666;
+        }
     }
     li {
         line-height: 1.25em;
+    }
+    &.copyright {
+        ul,li {
+            font-size: 0.8em;
+        }
     }
     }
 }
@@ -103,9 +151,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 div.example{
-    margin-left: -50px;
+    text-align:left;
     margin-right: 25px;
-    float: left;
     width: 600px;
     height: 400px;
     overflow: hidden;
@@ -113,13 +160,19 @@ div.example{
     border-radius: 10px;
     box-shadow: 5px 5px 3px #4444;
     .example-content {
+        position: relative;
         width: 960px;
         height: 640px;
         overflow: hidden;
 
         iframe {
+            position: absolute;
             transform:scale(0.65);
             transform-origin: 0 0;
+        }
+        img {
+            position: absolute;
+            width: 600px;
         }
     }
     &.small {
@@ -131,6 +184,10 @@ div.example{
         iframe {
             transform:scale(0.5);
             transform-origin: 0 0;
+        }
+        img {
+            position:absolute;
+            width: 600px;
         }
     }
     }
@@ -144,24 +201,13 @@ div.example{
     height: 35%;
 }
 
-.left-col {
-    font-size: 0.7em;
-    h1,h2,h3,h4,h5,h6 {
-        text-align: left;
-    }
-    width: 35%;
-    float: left;
-    .dim {
-        color: text-color;
-    }
-}
-
 .highlight {
     color: text-color-acc!important;
 }
 
 .right-col {
     margin-top: 15px;
+    text-align: left;
     width: 60%;
     float: right;
 }
